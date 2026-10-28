@@ -1,0 +1,117 @@
+@import url('https://googleapis.com');
+
+:root {
+    /* Colors from the style-guide.md */
+    --green: hsl(75,94%,57%);
+    --white: hsl(0, 0%, 100%);
+    --grey-700: hsl(0, 0%,20%);
+    --grey-800: hsl(0, 0%, 12%);
+    --grey-900: hsl(0, 0%, 8%);
+    --font-size: 12px;
+}
+
+* {
+margin:0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--grey-900);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 24px;
+}
+
+.card-container {
+    background-color: var(--grey-800);
+    width: 100%;
+    max-width: 380px;
+    padding: 40px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.profile-header {
+    margin-bottom: 24px;
+}
+
+.avator {
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+    margin-bottom: 24px;
+    display: inline-block;
+}
+
+img{
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+}
+
+.profile-name {
+    color: #ffffff !important;
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 16px;
+    margin-bottom: 8px;
+}
+
+.profile-location {
+    color: #c5f82a !important;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.profile-bio {
+    color: #ffffff !important;
+    opacity: 0.7;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.links-container ul {
+    list-style-type: none !important;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.social-link {
+    display: block;
+    background-color: var(--grey-700);
+    color: var(--white);
+    text-decoration: none;
+    padding: 14px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 700;
+    transition: all 0.2s ease;
+}
+
+.social-link:hover,
+.social-link:focus {   
+    background-color: var(--green);
+    color: var(--grey-900);
+    outline: none;
+}
+
+ul, ul {
+    list-style: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.links-container {
+    width: 100%;
+}
